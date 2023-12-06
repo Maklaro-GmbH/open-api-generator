@@ -158,7 +158,7 @@ final class Body
                     continue;
                 }
 
-                if ($property->format === 'binary') {
+                if ($property->format === 'binary' || $property->items?->format === 'binary') {
                     $fileProperties[] = $name;
                 }
 
